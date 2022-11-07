@@ -649,6 +649,23 @@ html {
   right: 0px;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -663,6 +680,10 @@ html {
 
 .h-1{
   height: 0.25rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .flex-1{
@@ -714,13 +735,8 @@ html {
   white-space: nowrap;
 }
 
-.rounded{
-  border-radius: 0.25rem;
-}
-
-.rounded-b{
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .rounded-b-md{
@@ -739,6 +755,11 @@ html {
 .bg-pink-500{
   --tw-bg-opacity: 1;
   background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -761,6 +782,10 @@ html {
 
 .p-4{
   padding: 1rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-right{
@@ -820,22 +845,8 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:block:hover{
-  display: block;
-}
-
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
-}
-
-.hover\:bg-zinc-200:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
 .hover\:text-zinc-200:hover{
@@ -845,4 +856,14 @@ html {
 
 .group:hover .group-hover\:block{
   display: block;
+}
+
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
 }
